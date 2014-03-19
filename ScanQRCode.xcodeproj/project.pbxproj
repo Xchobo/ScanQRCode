@@ -21,6 +21,11 @@
 		4030605518D943F900808A15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030603718D943F900808A15 /* UIKit.framework */; };
 		4030605D18D943F900808A15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4030605B18D943F900808A15 /* InfoPlist.strings */; };
 		4030605F18D943F900808A15 /* ScanQRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030605E18D943F900808A15 /* ScanQRCodeTests.m */; };
+		4030606918D9441200808A15 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030606818D9441200808A15 /* AVFoundation.framework */; };
+		4030606C18D9442700808A15 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030606B18D9442700808A15 /* QRCodeViewController.m */; };
+		4030606F18D9456B00808A15 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4030606D18D9456B00808A15 /* line@2x.png */; };
+		4030607018D9456B00808A15 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4030606E18D9456B00808A15 /* pick_bg@2x.png */; };
+		4030607418D945FC00808A15 /* webQRCode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4030607318D945FC00808A15 /* webQRCode@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		4030605A18D943F900808A15 /* ScanQRCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScanQRCodeTests-Info.plist"; sourceTree = "<group>"; };
 		4030605C18D943F900808A15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4030605E18D943F900808A15 /* ScanQRCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeTests.m; sourceTree = "<group>"; };
+		4030606818D9441200808A15 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4030606A18D9442700808A15 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		4030606B18D9442700808A15 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		4030606D18D9456B00808A15 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		4030606E18D9456B00808A15 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		4030607318D945FC00808A15 /* webQRCode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webQRCode@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4030606918D9441200808A15 /* AVFoundation.framework in Frameworks */,
 				4030603618D943F900808A15 /* CoreGraphics.framework in Frameworks */,
 				4030603818D943F900808A15 /* UIKit.framework in Frameworks */,
 				4030603418D943F900808A15 /* Foundation.framework in Frameworks */,
@@ -101,6 +113,7 @@
 		4030603218D943F900808A15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4030606818D9441200808A15 /* AVFoundation.framework */,
 				4030603318D943F900808A15 /* Foundation.framework */,
 				4030603518D943F900808A15 /* CoreGraphics.framework */,
 				4030603718D943F900808A15 /* UIKit.framework */,
@@ -112,6 +125,9 @@
 		4030603918D943F900808A15 /* ScanQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				4030606D18D9456B00808A15 /* line@2x.png */,
+				4030606E18D9456B00808A15 /* pick_bg@2x.png */,
+				4030607318D945FC00808A15 /* webQRCode@2x.png */,
 				4030604218D943F900808A15 /* AppDelegate.h */,
 				4030604318D943F900808A15 /* AppDelegate.m */,
 				4030604518D943F900808A15 /* Main.storyboard */,
@@ -119,6 +135,8 @@
 				4030604918D943F900808A15 /* ViewController.m */,
 				4030604B18D943F900808A15 /* Images.xcassets */,
 				4030603A18D943F900808A15 /* Supporting Files */,
+				4030606A18D9442700808A15 /* QRCodeViewController.h */,
+				4030606B18D9442700808A15 /* QRCodeViewController.m */,
 			);
 			path = ScanQRCode;
 			sourceTree = "<group>";
@@ -228,9 +246,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4030606F18D9456B00808A15 /* line@2x.png in Resources */,
 				4030604C18D943F900808A15 /* Images.xcassets in Resources */,
 				4030603E18D943F900808A15 /* InfoPlist.strings in Resources */,
 				4030604718D943F900808A15 /* Main.storyboard in Resources */,
+				4030607418D945FC00808A15 /* webQRCode@2x.png in Resources */,
+				4030607018D9456B00808A15 /* pick_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +272,7 @@
 			files = (
 				4030604A18D943F900808A15 /* ViewController.m in Sources */,
 				4030604418D943F900808A15 /* AppDelegate.m in Sources */,
+				4030606C18D9442700808A15 /* QRCodeViewController.m in Sources */,
 				4030604018D943F900808A15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
